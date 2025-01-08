@@ -13,27 +13,31 @@
   <link rel="stylesheet" href="./src/css/styles.css">
   <title>Frontend Mentor | Results summary component</title>
 </head>
-<body>
-  <div>
-    <header>
-      <p>Your Result</p>
-      <div>
-        <h3>76 <span>of 100</span></h3>
-      </div>
-      <h1>Great</h1>
-      <p>You scored higher than 65% of the people who have taken these tests.</p>
-    </header>
-    <main>
-      <h2>Summary</h2>
-      <ul>
-        <li>Reaction <span><strong>80</strong> / 100</span></li>
-        <li>Memory <span><strong>92</strong> / 100</span></li>
-        <li>Verbal <span><strong>61</strong> / 100</span></li>
-        <li>Visual <span><strong>72</strong> / 100</span></li>
-      </ul>
-      <a href="#">Continue</a>
-    </main>
-    <footer>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/caroWD" target="_blank">caroWD</a>.</footer>
+<body class="text-mountain-meadow-950 2xs:text-lg">
+  <div class="flex flex-col sm:max-w-screen-xs sm:mx-auto sm:h-dvh sm:justify-center lg:max-w-screen-md">
+    <div class="flex flex-col sm:rounded-[2rem] sm:shadow-2xl lg:flex-row lg:*:w-1/2">
+      <header class="flex flex-col pt-6 px-10 pb-10 bg-gradient-to-b from-dark-blue-500 to-dark-blue-600 rounded-b-[2rem] text-center text-white-50 *:mb-4 2xs:pt-8 2xs:px-12 2xs:pb-12 2xs:*:mb-6 sm:rounded-[2rem] lg:px-16 lg:justify-center">
+        <p class="opacity-65">Your Result</p>
+        <div class="flex justify-center">
+          <h3 class="w-36 h-36 py-8 rounded-full bg-gradient-to-b from-dark-blue-800 text-6xl font-bold lg:w-52 lg:h-52 lg:text-8xl lg:py-11">76 <span class="block text-base font-normal opacity-40">of 100</span></h3>
+        </div>
+        <hgroup class="last:mb-0">
+          <h1 class="mb-2 text-2xl 2xs:text-3xl">Great</h1>
+          <p class="text-sm 2xs:text-base">You scored higher than 65% of the people who have taken these tests.</p>
+        </hgroup>
+      </header>
+      <main class="p-6 *:mb-4 2xs:p-8 2xs:*:mb-6 lg:p-12">
+        <h2 class="font-bold">Summary</h2>
+        <ul class="flex flex-col gap-4 *:relative *:py-3 *:pl-11 *:pr-3 *:rounded-md *:before:absolute *:before:left-3 *:before:top-[0.875rem] *:*:text-white-400 *:*:*:text-white-700 2xs:*:before:top-4">
+          <li class="flex justify-between bg-carnation-50 before:content-[url('../img/icon-reaction.svg')] text-carnation-500">Reaction <span><strong>80</strong> / 100</span></li>
+          <li class="flex justify-between bg-sun-50 before:content-[url('../img/icon-memory.svg')] text-sun-400">Memory <span><strong>92</strong> / 100</span></li>
+          <li class="flex justify-between bg-mountain-meadow-50 before:content-[url('../img/icon-verbal.svg')] text-mountain-meadow-600">Verbal <span><strong>61</strong> / 100</span></li>
+          <li class="flex justify-between bg-dark-blue-50 before:content-[url('../img/icon-visual.svg')] text-dark-blue-700">Visual <span><strong>72</strong> / 100</span></li>
+        </ul>
+        <a href="#" class="block px-6 py-3 rounded-full bg-dark-blue-900 text-white-50 text-center hover:bg-gradient-to-b transition-all duration-300 hover:from-dark-blue-500 to-dark-blue-600 last:mb-0">Continue</a>
+      </main>
+      <footer class="p-6 text-center text-xs text-white-400 *:underline *:transition-all *:duration-300 lg:absolute lg:left-0 lg:bottom-0 lg:last:w-full">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="hover:no-underline hover:text-white-600">Frontend Mentor</a>. Coded by <a href="https://github.com/caroWD" target="_blank" class="hover:no-underline hover:text-white-600">caroWD</a>.</footer>
+    </div>
   </div>
   <script src="./src/js/app.js"></script>
 </body>
