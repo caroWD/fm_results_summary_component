@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "scanTailwind": "npx tailwindcss -i ./src/css/config.css -o ./src/css/styles.css --watch",
+    "prodAnimate": "npx postcss ./node_modules/animate.css/source/animate.css -o ./src/css/animate.min.css --no-map --env production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
