@@ -1,0 +1,22 @@
+{
+  "name": "fm_results_summary_component",
+  "version": "1.0.0",
+  "description": "Frontend Mentor: results summary componen",
+  "main": "index.js",
+  "scripts": {
+    "scanTailwind": "npx tailwindcss -i ./src/css/config.css -o ./src/css/styles.css --watch",
+    "startAnimate": "npx postcss ./node_modules/animate.css/animate.min.css -o ./src/css/animate.min.css --no-map --env development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "postcss": "^8.4.49",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
+}
