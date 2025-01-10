@@ -44,10 +44,13 @@ const showScore = (place, data) => {
 }
 
 const urlOrigin = window.location.origin;
+const urlPathname = window.location.pathname;
 const scoreTotal = document.querySelector('[data-score="total"]');
 const itemScores = [...document.querySelectorAll('[data-score="score"]')];
 
-fetch(`${urlOrigin}/src/data/data.json`)
+console.log(urlPathname);
+
+fetch(`${urlOrigin}${(urlPathname !== '/index.html') ? urlPathname : ''}/src/data/data.json`)
   .then(response => response.json())
   .then(data => {
     const total = calculateTotal(data);
